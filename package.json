@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-postcss",
+  "name": "rollup-plugin-postcss-umi",
   "version": "2.0.3",
   "description": "Seamless integration between Rollup and PostCSS",
   "main": "dist/index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/egoist/rollup-plugin-postcss.git"
+    "url": "git+https://github.com/egoist/rollup-plugin-postcss-umi.git"
   },
   "keywords": [
     "postcss",
@@ -24,12 +24,12 @@
   "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/egoist/rollup-plugin-postcss/issues"
+    "url": "https://github.com/egoist/rollup-plugin-postcss-umi/issues"
   },
   "engines": {
     "node": ">=6"
   },
-  "homepage": "https://github.com/egoist/rollup-plugin-postcss#readme",
+  "homepage": "https://github.com/egoist/rollup-plugin-postcss-umi#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "autoprefixer": "^7.2.4",

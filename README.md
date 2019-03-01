@@ -1,6 +1,6 @@
-# rollup-plugin-postcss
+# rollup-plugin-postcss-umi
 
-[![NPM version](https://img.shields.io/npm/v/rollup-plugin-postcss.svg?style=flat)](https://npmjs.com/package/rollup-plugin-postcss) [![NPM downloads](https://img.shields.io/npm/dm/rollup-plugin-postcss.svg?style=flat)](https://npmjs.com/package/rollup-plugin-postcss) [![Build Status](https://img.shields.io/circleci/project/egoist/rollup-plugin-postcss/master.svg?style=flat)](https://circleci.com/gh/egoist/rollup-plugin-postcss) [![codecov](https://codecov.io/gh/egoist/rollup-plugin-postcss/branch/master/graph/badge.svg)](https://codecov.io/gh/egoist/rollup-plugin-postcss)
+[![NPM version](https://img.shields.io/npm/v/rollup-plugin-postcss-umi.svg?style=flat)](https://npmjs.com/package/rollup-plugin-postcss-umi) [![NPM downloads](https://img.shields.io/npm/dm/rollup-plugin-postcss-umi.svg?style=flat)](https://npmjs.com/package/rollup-plugin-postcss-umi) [![Build Status](https://img.shields.io/circleci/project/egoist/rollup-plugin-postcss-umi/master.svg?style=flat)](https://circleci.com/gh/egoist/rollup-plugin-postcss-umi) [![codecov](https://codecov.io/gh/egoist/rollup-plugin-postcss-umi/branch/master/graph/badge.svg)](https://codecov.io/gh/egoist/rollup-plugin-postcss-umi)
  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
 
 <img align="right" width="95" height="95"
@@ -12,7 +12,7 @@ Seamless integration between [Rollup](https://github.com/rollup/rollup) and [Pos
 ## Install
 
 ```bash
-yarn add rollup-plugin-postcss --dev
+yarn add rollup-plugin-postcss-umi --dev
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ yarn add rollup-plugin-postcss --dev
 You are viewing the docs for `v2.0` which only support Rollup 1.0 or above.
 ```js
 // rollup.config.js
-import postcss from 'rollup-plugin-postcss'
+import postcss from 'rollup-plugin-postcss-umi'
 
 export default {
   plugins: [
