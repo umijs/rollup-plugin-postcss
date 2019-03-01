@@ -1,7 +1,6 @@
 import path from 'path'
 import pify from 'pify'
 import resolve from 'resolve'
-import importCwd from 'import-cwd'
 import PQueue from 'p-queue'
 
 // This queue makes sure node-sass leaves one thread available for executing fs tasks
@@ -23,7 +22,15 @@ export default {
   test: /\.s[ac]ss$/,
   process({ code }) {
     return new Promise((resolve, reject) => {
-      const sass = importCwd.silent('node-sass') || importCwd.silent('sass')
+      let sass;
+      try {
+        sass = require('node-sass')
+      } catch (e) {
+      }
+      try {
+        sass = require('sass')
+      } catch (e) {
+      }
       if (!sass) {
         throw new Error(`You need to install either node-sass or sass in order to process Sass files`)
       }

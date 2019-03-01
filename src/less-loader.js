@@ -1,4 +1,3 @@
-import importCwd from 'import-cwd'
 import pify from 'pify'
 import humanlizePath from './utils/humanlize-path'
 
@@ -6,7 +5,7 @@ export default {
   name: 'less',
   test: /\.less$/,
   async process({ code }) {
-    const less = importCwd('less')
+    const less = require('less')
 
     let { css, map, imports } = await pify(less.render.bind(less))(code, {
       ...this.options,
